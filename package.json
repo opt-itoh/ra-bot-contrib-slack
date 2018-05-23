@@ -1,0 +1,8 @@
+{
+    "name" : "ra-bot-contrib-slack",
+    "node-red" : {
+        "nodes": {
+            "slack": "slack.js"
+        }
+    }
+}

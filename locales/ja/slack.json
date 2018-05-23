@@ -1,0 +1,7 @@
+{
+    "slack": {
+        "warnings": {
+            "missingslackout": "後続にSlack responseノードを繋げてください"
+        }
+    }
+}

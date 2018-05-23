@@ -1,0 +1,7 @@
+{
+    "slack": {
+        "warnings": {
+            "missingslackout": "Please connect Slack response node in succession"
+        }
+    }
+}
