@@ -2,6 +2,10 @@
     "slack": {
         "warnings": {
             "missingslackout": "Please connect Slack response node in succession"
+        },
+        "tip": {
+            "in": "The url will be relative to ",
+            "res": "The messages sent to this node <b>must</b> originate from an <i>slack in</i> node"
         }
     }
 }

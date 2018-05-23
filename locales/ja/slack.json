@@ -2,6 +2,10 @@
     "slack": {
         "warnings": {
             "missingslackout": "後続にSlack responseノードを繋げてください"
+        },
+        "tip": {
+            "in": "URLは相対パスになります。",
+            "res": "本ノードに送付するメッセージは、<i>slack in</i>ノードを起点としてください。"
         }
     }
 }
