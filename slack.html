@@ -156,7 +156,7 @@
         oneditsave: function() {
             var nodes = getFollowingNodes(this);
             for (var i = 0; i < nodes.length; i++) {
-                if (nodes[i].type === 'slack out') return
+                if (nodes[i].type === 'slack response') return
             }
             RED.notify(RED._("ra-bot-contrib-slack/slack:slack.warnings.missingslackout",{}),"warning");
         }
