@@ -1,8 +1,11 @@
 {
-    "name" : "ra-bot-contrib-slack",
-    "node-red" : {
+    "name": "ra-bot-contrib-slack",
+    "node-red": {
         "nodes": {
             "slack": "slack.js"
         }
+    },
+    "dependencies": {
+        "request": "^2.87.0"
     }
 }
