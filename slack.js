@@ -178,6 +178,10 @@ module.exports = function(RED) {
                     method: 'POST',
                     uri: channelURL,
                     body: JSON.stringify(data)
+                }, function(err, res, body) {
+                    msg.statusCode = res.statusCode;
+                    msg.payload = body;
+                    node.send(msg);
                 });
             }
             catch (err) {

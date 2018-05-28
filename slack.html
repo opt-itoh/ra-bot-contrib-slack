@@ -100,13 +100,13 @@
     }
 
     RED.nodes.registerType('slack in',{
-        category: 'social',
+        category: 'input',
         defaults: {
             name: {value:""},
             url: {value:"", required:true}
         },
-        color:"#4C9689",
-        icon: "hash.png",
+        color:"#1AA197",
+        icon: "slack.png",
         align: "left",
         inputs:0,
         outputs:1,
@@ -142,16 +142,6 @@
                 $("#node-input-path").html(root);
                 $("#node-input-tip").show();
             }
-            if(!RED.nodes.getType("swagger-doc")){
-                $('.row-swagger-doc').hide();
-            }
-            $("#node-input-method").change(function() {
-                if ($(this).val() === "post") {
-                    $(".form-row-http-in-upload").show();
-                } else {
-                    $(".form-row-http-in-upload").hide();
-                }
-            }).change();
         },
         oneditsave: function() {
             var nodes = getFollowingNodes(this);
@@ -163,15 +153,15 @@
     });
 
     RED.nodes.registerType('slack response',{
-        category: 'social',
+        category: 'output',
         defaults: {
             name: {value:""}
         },
         inputs:1,
         outputs:0,
         align: "right",
-        color:"#4C9689",
-        icon: "hash.png",
+        color:"#1AA197",
+        icon: "slack.png",
         label: function() {
             return this.name||"slack";
         },
@@ -181,7 +171,7 @@
     });
 
     RED.nodes.registerType('slack post',{
-        category: 'social',
+        category: 'function',
         defaults: {
             name: {value:""},
             channelURL: {value:"", required:true},
@@ -189,11 +179,11 @@
             emojiIcon: {value:""},
             channel: {value:""}
         },
-        color:"#4C9689",
-        icon: "hash.png",
-        align: "right",
+        color:"#1AA197",
+        icon: "slack.png",
+        align: "left",
         inputs:1,
-        outputs:0,
+        outputs:1,
         label: function() {
             return this.name||"slack";
         },
